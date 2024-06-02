@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-BlazorWebApp-7d9ba5ce-1a4d-409d-845a-465009efee67</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+    <Content Remove="wwwroot\scss\sections\_chat.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="wwwroot\scss\components\_buttons.scss" />
+    <None Include="wwwroot\scss\components\_forms.scss" />
+    <None Include="wwwroot\scss\components\_links.scss" />
+    <None Include="wwwroot\scss\core\_base.scss" />
+    <None Include="wwwroot\scss\core\_colors.scss" />
+    <None Include="wwwroot\scss\core\_media.scss" />
+    <None Include="wwwroot\scss\core\_typography.scss" />
+    <None Include="wwwroot\scss\sections\_account-details.scss" />
+    <None Include="wwwroot\scss\sections\_app-section.scss" />
+    <None Include="wwwroot\scss\sections\_courses-details.scss" />
+    <None Include="wwwroot\scss\sections\_courses.scss" />
+    <None Include="wwwroot\scss\sections\_features.scss" />
+    <None Include="wwwroot\scss\sections\_chat.scss" />
+    <None Include="wwwroot\scss\sections\_footer.scss" />
+    <None Include="wwwroot\scss\sections\_header.scss" />
+    <None Include="wwwroot\scss\sections\_lightanddark.scss" />
+    <None Include="wwwroot\scss\sections\_showcase.scss" />
+    <None Include="wwwroot\scss\sections\_signin.scss" />
+    <None Include="wwwroot\scss\sections\_signup.scss" />
+    <None Include="wwwroot\scss\sections\_subscribe.scss" />
+    <None Include="wwwroot\scss\sections\_work-management.scss" />
+    <None Include="wwwroot\scss\sections\_work-tools.scss" />
+    <None Include="wwwroot\scss\_components.scss" />
+    <None Include="wwwroot\scss\_core.scss" />
+    <None Include="wwwroot\scss\_sections.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorWebApp.Client\BlazorWebApp.Client.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4" />
+  </ItemGroup>
+
+</Project>
